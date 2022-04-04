@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			background-color: #ece5dd;
+		}
+		h1{
+			text-align: center;
+		}
+		li{
+            font-family: cursive;
+			font-size: 18px;
+		}*{
+  margin: 0;
+  padding: 0;
+	
+}
+.ull {
+  background-color: black;
+}
+
+.ull .lii {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 20px;
+}
+
+.ull .lii:hover {
+  background-color: green;
+}
+
+.ull .lii a {
+  text-decoration: none;
+  color: #fff;
+}
+
+	</style>
+	<title>SCSS</title>
+</head>
+<body>
+    <ul class="ull">
+	<li class="lii"><a href="html.html">Html</a></li>
+	<li class="lii"><a href="CSS.html">CSS</a></li>
+	<li class="lii"><a href="note.html">Home</a></li>
+    </ul>
+	<h1>SCSS Note</h1>
+  <p><b>Chrome</b><br>
+• Ctrl + W    -   Ochiq turgan tabni (oynani) yopishda xizmat qiladi <br>
+• Ctrl + E    -   Google qidiruv tizimidan ma'lumot qidirish <br>
+• Ctrl + R    -   Qayta yuklash uchun xizmat qiladi <br>
+• Ctrl + T   -   Yangi qidiruv oynasi ochib beradi <br>
+• Ctrl + U    -   Sayt codeni ko'rish uchun xizmat qiladi (view-source)  <br>
+• Ctrl + O    -   Fayl ochish uchun xizmat qiladi  <br>
+• Ctrl + P    -   Saytni to'liq chop etish uchun xizmat qiladi (printerdan) <br>
+• Ctrl + S    -   Saytni .html kengaytmada saqlab olish uchun xizmat qiladi <br>
+• Ctrl + D    -   Saytni bookmark qatoriga saqlab qo'yadi. <br>
+• Ctrl + F    -   Saytdan kiritilgan matnni qidirib beradi <br>
+• Ctrl + H    -   Tarixlar bo'limiga olib boradi (History) <br>
+• Ctrl + J    -   Yuklab olishlar bo'limiga olib boradi (Downloads) <br>
+• Ctrl + L    -   Kursorni qidiruv joyiga olib boradi <br>
+• Ctrl + C   &  Ctrl V ni hamma biladi (copy + paste) <br>
+• Ctrl + N    -   Yangi Chrome oynasini ochib beradi</p>
+	<ul>
+		<li><b>Rang</b> $nimadir:red; color:$nimadir;</li>
+		<li><b>@import"faylnomi";</b> bu asosiy scss faylda boladi.</li>
+		<li><b>@mixin nom</b> @include nom 
+			$co:red;
+            @mixin btnn ($nom,$olcham) {
+            background-color:$co ;
+            padding: 8px 8px;   
+            outline: none; 
+            border: none;
+            font-size: $olcham;
+            margin-right: 150px;
+            transition: opacity .5s ease;
+            cursor: pointer;
+            &:hover{
+            opacity: 0.7;
+            }
+            &::after{
+            content: $nom;
+            } 
+            }
+			button{
+            @include btnn('alik',15px);
+            }
+            .button2{
+            @include btnn('salom',18px);
+            }
+    </li>
+	</ul>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<meta charset="UTF-8">
+    <title>Note JavaScrip</title>
+    <style type="text/css">
+    	*{
+    	}
+    	img{
+    		width: 600px;
+    	}
+    	div{
+    		/*margin: 10px;*/
+    		padding: 15px;
+    	}
+    	.one{
+    		background-color: #00ff80;
+    	}
+    	.two{
+    		background-color: #94bbe9;
+    	}
+    	.three{
+    		background-color: #f800ff;
+    	}
+    	.four{
+    		background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    	}
+    	.five{
+    		background: rgb(131,58,180);
+            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(252,176,69,1) 100%);
+    	}
+    </style>	
+</head>
+<body>
+	<div class="one">
+		<h2>Zokir Rakhimov 1-dars</h2>
+		<img src="../photos/js_1.1.jpg">
+		<p>JavaScript 1995-yilda web sayt larga  pragramma qo'yish uchun chiqarilgan.Netscape kampaniyasi tomonidan va birinchi Netscape Navigator borwserida ishlatilgan.</p>
+		<p>Under the hood bu dasturlash ichidan aslida qanday ishlashi kampyuter faqat 1 va 0 larni chunashidir(bit,ikkilik sanoq sistemasi, sonlar uchun 64 ta bit ajratilgan ).</p>
+		<p>Number ratsianal sonlar</p>
+		<p>Arifmetik amallar + - / * qoldiq %</p>
+		<!-- <img src="../photos/js_1.5.jpg"> -->
+		<p>Special Number infiitiv(cheksizlik), -infinitiv(- cheksizlik), NaN (not a number misol:0 / 0 nan )</p>
+		<p>String `(backtick), '(single quotes), "(double quotes) har bitta harf uchun 16 bit ajratiladi hotiradan, concatenates bu harf, so'zlarni bir biriga qo'shish 's' + 'as'(template literals ${})(Unicode standrd)</p>
+		<p>Unary Operators bu birtarafida qiymat bor operator lar(misol: -2, typeof 3) va binary operator lar ikki tarafida ham qiymati bor operator lar(misol: 2 - 2).</p>
+		<p>Boolean</p>
+		<p>Comparison operators(solishtima) <, >, <=, >=, ==, !=, ===, !==(NaN == NaN -> false)</p>
+		<p>Logical operators &&-va ||-or !-not(ternary 3 taqiymat qabul qiladi 100 * 4 == 401 ? 'to'gri' : 'natogri')</p>
+		<p>Empty Value null and underfined</p>
+		<p>Automatic Type Conversions('5' - 1 -> 4 '5' + 1 -> 51 '5' == 5 -> true '5' === 5 -> false)</p>
+		<p>Short 1-dars 40:25 ko'rish</p>
+	</div>
+	<div class="two">
+		<h2>2-dars</h2>
+		<img src="../photos/js_2.1.jpg">
+		<p>Expression(ifoda) and statement(bayonot) dastur bu statement larni yeg'indisi, statement lar ifodalardan tashkil topadi.</p>
+        <p>Binding(o'zgaruvchi va variable)</p>
+		<p>modulo(mojulo) = % = qoldiq</p>
+		<p>Binding name o'zgaruvchini nomi $, _ va A-Z bo'lgan belgilardan boshlanishi mumkin(kalit so'zlarni o'zgaruvchi sifatida ishlatib bo'lmaydi let new in ...).</p>
+		<p>The Environment bu console.log va promt() bularni typeof function ekanligi haqida.</p>
+		<p>Function bu qiymatga o'ralgan kichgina bir pragramma.</p>
+		<p>Console.log</p>
+		<p>Control Flow bu dastur tepadan pasga qarab ishlashi haqida.</p>
+		<p>Condditional Execution yo'lni ikkiga bo'lish uchun  if(!Number.isNaN(x)){} bu x ni son yoki raqamligini tekshirish. </p>
+	</div>
+	<div class="three">
+		<h2>3-dars</h2>
+		<img src="../photos/js_3.1.jpg">
+		<p>Defining a function - funksiya parameters(qavis ichidagisi) va body(jingalak qavis ichidagisi) dan tashkil topadi(let power = function())</p>
+		<p>Bindings and scopes - o'zgaruvchi hechqanday scope ni ichida bo'lmas ular global scope diyiladi agar scope ichida bo'lsa local scope deyiladi(var da esa bu narsa ishbermaydi hamma jo'yda ishlay veradi).</p>
+		<p>Nested scope ichma ich scope.</p>
+		<p>Function a value - function ni qiymatini o'zgartirish.</p>
+		<p>Declaration function - oddiy function nom(s)</p>
+		<p>Arrow Function - 2015 yangi qo'shilgan funksiya(let arrow = (name) =>{return} agar bitta argument ishlatilsa let arrow = name => {})</p>
+		<p>The call stack - hotiradan ajratilgan joy malumotlarni eslab qoluvchi, stack overflow bu staklar to'lib qolishi</p>
+		<p>Optional Arguments agar function ni chaqirganimizda qiymat bermasak yani udefined bo'lsa unga oldindan qiymat berish mumkin misol: powers(son_1, son_2 = 5) son_2 qiymat berilmasa 5 qo'yilib ketadi.</p>
+		<p>Closure - function ichidagi function video ni ko'rib chunish mumkin.</p>
+		<p>Recursion - for loop ga o'xshagan narsa(yana ko'rib chiqish).</p>
+	</div>
+	<div class="four"> 
+		<h2>4-dars</h2>
+		<img src="../photos/js_4.1.jpg">
+		<p>Array - array index si 0 dan boshlanadi va uni chaqirganda matematik va shunga o'xshash ammallar bajarsa bo'lsadi masalan nameArray[3 - 2] shunda u 1 raqamli index ni chaqiradi.</p>
+		<p>Properties - (hususiyat) hamma qiymatlarni hususiyati bo'ladi lekin null va undefined ni hususiyati yo'q</p>
+		<p>Method - metod lar ohirida qavs bo'ladi, propertiylar funksiyalardan tashkil topgan bo'lsa metod deyiladi(push, pop, includes, toUpperCase).</p>
+		<p>Objects - object ni o'chirish uchun (delete object.key), qidirish uchun('keys' in Obeject), objectni key yani hossalarini array holatida chiqarib beradi(Object.keys(ObjeyktNomi)), Object.assign bu object larni birlashtiradi va ustidan yozib ketadi(Object.assign(obyekt nomi, {a: 90, p: 'as'}))</p>
+		<p>Mutability - bu o'zgaruvchanlik, string , number , boolean qiymatlr immutable va hosil qilingandan keyin ichidagi narsalarni o'zgartirib bo'lmaydi(yani let ok = 'ok' ok.[0] = 'h' bunday qilaolmaymiz lekin uni butunlay o'zgartirish mumkin ok = 'hk') ammo array va object lar unday emas(ularda let object = { key: 'ye'} object.key = 'yes' bumday qilib bo'ladi), (agar objectni const da elon qilsak unda ichidagi qiymatni o'zgartirib bo'maydi ammo unga yangi qiymat qoshib bo'ladi o'chirib bo'ladi) va let ob_1 = {val: 10} let ob_2 = {val: 10} ob_1 == ob_2 folse chiqadi qiymati bir xil bo'lsa ham id si har xil.</p>
+		<p>Array Loop - array ichiga object da yozib ketmaket chiqarish, string larni ham ketmaket chiqarish mumkin.(for let ok of arrayName){ console.log(ok)}</p>
+		<p>Additional Methods and Arrays - array metodlari qarshi oling: shift(arrayni boshidagi olib tashlaydi), unshift (bu esa qo'shadi), indexOf(qidiradi agar ikkinchi qiymatni bersa o'sha yerdan turib qidiradi), lastIndexOf(ohiridan boshlab qidiradi), slice(kesib oladi, agar slice() o'zi berilsa nusxasini oladi, ikki qiymat oladi agar bitta qiymat berilsa ohirgacha qirqadi birinchi bergan qiymatimiz inclusive(yani o'sha index ni o'zini ham oladi) ikkinchi qiymati esa exclusive (undan oldingi index ni oladi)), concat(birbirini ulash ikkita arrayni ulaydi).(shujoyini ko'rishni taklif qilaman)</p>
+		<p>Strings & Theirproperties - slice va indexOf metod larini string ga ham ishlatib bo'ladi, trim(bo'shjoyni olib tashlaydi), padStart( ikkita argument qabul qiladi birinchisi bu nechi xonali son ligini kirgizish ikkinchisi o'ng tomonini nima bilan to'ldirish), split() bu bitta matnni arrayga ajratadi uni ichiga bosh qiymat ' ' bersak har bosh qiymatni ko'rsa bo'ladi, join() esa array larni bitta qiladi uni ichiga ' ' bosh qiymat beriladi, 'la'.repeat(3) => lalala </p>
+		<p>Rest parameters (let numbers = [9, 8, 6] maxFunction(...numbers) shunda numbers array dagi qiymatlar bittadan tahlanadi maxFunction(7, ...numbers, 90)) va spreat operoter bu array ni clon qilishda ishlatilinadi let clone_number = (...numbers).</p>
+		<p>Destructuring bu array ni har bir qiymatiga nom beradi let array = [1, 2, 3]; let [one,two,three] = array; console.log(two) => 2 va buni object ga ham qilish mumkin let ObjectA = {name:'A'}; let {name:one} = ObjectA; console.log(one) => 'A'</p>
+		<p>JSON (JavaScript Object Notation) JavaScript object dan farqi key larga ham qoshtirnoq ichida bo'ladi (JSON.srtingify() and JSON.parse() )</p>
+		<p></p>
+	</div>
+	<div class="five">
+		<h2>5-dars</h2>
+		<img src="../photos/js_5.1.jpg">
+		<p>DOM Document Object Model</p>
+		<p>querySelector() div ni ichida gi birinchi p ni belgilamoqchi bo'lsak document.querySelector('div>p')</p>
+		<p>querySelectorAll() bu ko'p tag larni chaqirish uchun ishkatilinadi.(let li_lar = document.querySelectorAll('li');)</p>
+		<p>createElement() bu yangi tag ochish ishlatilinadi.</p>
+		<p>createTextNode() bu tag ichiga yangi text qo'shadi(let text = document.createTextNode('Salom') p.appendChild(text))(yana bir usuki: tag.innerHTML = 'text').</p>
+		<p>appendChild() bu hosil qilingan tag ni qaysi tag ichiga jo'ylashtirishni bildiradi va u oxirgi qatorga qo'yadi(di ni ichiga qo'yish uchun div.appendChild(p)).</p>
+		<p>insertBefore( , ) qavs ichida ikkita argument qabul qiladi birinchisi yangi hosil qilayotgan ta, ikkinchisi qaysi tag dan oldinligi misol: div.insertBefore(newtag, p).</p>
+		<p>parentNode propertiy ota tag ni chaqirishda oson yo'l, let div = (bola tag).parentNote shunda u ota tag ni aniqlab beradi.</p>
+		<p>removeChild() bu tag ni o'chirish uchun ishlatilinadi, tag ni o'chirish uchun uni chaqish va uni ota tag yani parent element ini (ko'pincha div bo'ladi parent.removeChild(p)).</p>
+		<p>element.id tag ni id sini o'zgartirish.</p>
+		<p>element.nextSibling keyingi tag belgilaydi(referens beradi).</p>
+		<p>element.classNaame class ini o'zgartiradi.</p>
+		<p>element.scrollIntoView()</p>
+		<p>element.hasAttribute() bu tag ichida qanday atribut lar borligini bilib beradi(true folse qaytaradi).</p>
+		<p>element.getAttribute() bu atribut ichidagi qiymatni chiqaradi.</p>
+		<p>element.setAttribute() ikki ta qiymat qabul qiladi birinchisi atribut nomi ikkinchisi atribut qiymati(hight:'10px').</p>
+		<p>element.removeAttribute() atributni o'chirish uchun ishlatilinadi.</p>
+		<p>Event onclick and addEventListener (element.addEventListener('click'), (e) => {})</p>
+		<p>Common Events load beforeunload focus blur click(mishka bosilganda) dbclick(2 marta bosilganda) contextmenu keypress  change mouseout mouseover resize bu event larni addEventListener orqali qilish mumkin yoki o'zini element.click = function().</p>
+	</div>
+	<div>
+		<h2>6-dars</h2>
+		<p>AJAX Asynchronous JavaScript and XML </p>
+	</div>
+	<div>
+		<h2>Qisqartma so'zlar</h2>
+		<p>single quotes `</p>
+		<p>double quotes "</p>
+		<p>backticks '</p>
+		<p>corli breysez { jingalak qavs figurni kavichka</p>
+		<p>underscores _</p>
+	</div>
+</body>
+</html>

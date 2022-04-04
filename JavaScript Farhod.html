@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScriptNote</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- <link rel="stylesheet"  href="./bootstrap/css/bootstrap.min.css"> -->
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+	<style type="text/css">
+		img{
+			display: inline-block;
+	        opacity: 0.5;
+            width: 25px;
+        }
+        img:hover{
+            opacity: 1;
+            width: 60%;
+		}
+		h2{
+			display: inline-block;
+		}
+		p{
+			font-size: 18px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container my-5">
+		<h2>Erkin mavzu</h2>
+		<p>toUpperCase toLowerCase - kichkinada.</p>
+		<p>!JavaScript katta harfga etibor beradi and JavaScribe sanashni 0 dan boshlarkan	.</p>
+		<img src="./img/JSN_5.png">object ni olib chiqish.
+		<img src="./img/JSN_6.png">bu object ni ichidagi data larni hammasini text ga ogirib chiqarib beradi.
+		<p>Length bu array da nechta indeks borligini  chiqarib beradi.</p>
+		<p>Console turlari time varm log error</p>
+		<p>JavaScript bu dinamik til.</p>
+		<p>let number = 5e3;  => 5000 , number 7e2; => 700, number = 2e-2; => 0.02</p>
+		<p>type conversion bu string dan number ga otish toString</p>
+	</div>
+	<div class="container bg-primary p-2 my-5">
+		<h2>Dom Document object model</h2>
+		<p>faqat id uchun const p = document.getElementById('p1');</p>
+		<p>const p = document.querySelector("#click")</p>
+		<p>const p = document.querySelector(".click")</p>
+        <p>console.log(p);</p>
+        <p>html content ni va atribut larni ozgartirish p.innerHTML = "span> class="something"bla bla/span>"</p>
+        <p>faqat contentni ozgartirish p.textContent = "qandey";</p>
+        <p>class qoshish yoki ozgartishish p.className = "new-class";</p>
+        <p>input uchun qiymatini(value) olib beradi console.log(input.value);</p>
+        <p>p ni content ini oish uchun console.log(p.textContent);</p>
+        <p>button ga beriladigab atribut onclick="calculateBmi()" ichidagi calculate() bu js dagi nom bu nomga qarab ozgaradi.</p>
+        <p>parseFloat bu strim dan numberga ogrib beradi parseInt ham shunday lekin faqat butun son qilib ogiradi.</p>
+        	<div>
+		<p>Stringa o'tkazish usuli (string(5) yoki (10.toString()))</p>
+        <p>toFixed bu sondi keyingi qiymatlarini ko'rsatish yoki yashirishi mumkin(let val = 5.998; val.toFixed(1) => 6.0 val.toFixed() => 6 agar qavs ichiga qiymat yozmasak sonni o'zini chiqaradi va ohirgi raqamini taqribal hsoblaydi).</p>
+        <p>True va Folse ni Number(true) ga o'tkazsa bo'ladi va ularni qiymati 1 va 0 ga o'zgaradi.</p>
+        <p>parseInt va parseFloat bu string qiymatdagi sonlarni numberga o'tgazib butun qiymatini oladi parseFloat esa barcha qiymatini oladi.</p>
+		<p>Math propertiy va metod lari Math.PI , Math.E , Math.round() faqat butun son qaytaradi, Math.ceil() 2.001 bo'lsa ham 3 qaytaradi , Math.floor 2.999 => 3 , Math.sqrt() ildiz ostidan chiqaradi, Math.abs() -manfiy sonni +musbatga aylantirib beradi, Math.pow() sonni darajaga ko'taradi birinchi qiymati son ikkinchi qiymati daraja , Math.max va Math.min sonlar orasida eng kichik va kattasini qaytaradi va Math.random() 0 va 1 oradida tahminiy sonni qaytaradi.</p>
+		<p>Call and Apply funksiya ichidagi o'zgaruvchiga tashqaridagi a'zgaruvchi orqali qiymat berish.</p>
+		<p>element.CharAt('3') = element[3]</p>
+		<p>substring(2,3) kesib beradi.</p>
+		<p>bind apply</p>
+	</div>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>1-dars. </h2>
+		<p></p>
+	</div>	
+	<div class="container bg-success">
+		<h2>O'zgaruvchilar</h2>
+		<p>let, var va const</p>
+		<p>typeof bu o'zgaruvchini turini aniqlab beradi.</p>
+		<p>1.Kalit so'z bo'lmasligi: if, for.</p>
+		<p>2.Raqam bilan boshlanmasligi: 1name.</p>
+		<p>3.Probel va chiziqchasiz: name jon,name-jon.</p>
+		<p>4.Case-sensitive yani katta va kichik harflar bir xil hisollanmaydi: name boshqa Name boshqa.</p>
+		<p>5.Mazmunli bo'lishi kerak yani name bilan qiymat mano jihatdan yaqin bolish kerak.</p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>Primitiv/Value turlari</h2>
+		<img src="./img/JSN_1.png">
+		<p>1.String</p>
+		<p>2.Number</p>
+		<p>3.Boolean  shu qiymatlarda false bo'ladi boshjoy, 0, qiymati berilmagan, null, false va 10 / 'as'(NaN) misol let x Boolean(x) => false, Boolean('') => false, Boolean('') => false , Boolean('-9') => true Boolean(10 / 'as') => false.</p>
+		<p>4.Underfined</p>
+		<p>5.Null</p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>5-6-7-dars. Reference turlari</h2>
+		<p>1.Object</p>
+		<p>2.<b>Array</b> bu bir qancha o'zgaruvchilar ichiga oladigan quti va uning property lari va method lari bor.Length va array.[son] bular property.Push(), Pop() shularga ohshagan ohirida qavis bilan keladiganlar method.</p>
+		<p>3.Function</p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>8-9-10-11.1-11.2-dasr. Operatorlar</h2>
+		<img src="./img/JSN_7.png">
+		<img src="./img/JSN_8.png">
+		<h5>Arefmetik(arifmetic) operatorlar</h5>
+		<p>+, -, *, /, **, % va inkriment ++sonni oldidan kelsa bittada qiymati bittaga oshadi son++dan keyin kelsa ikkinchi marta chaqirganda sonni qiymati bittaga oshadi, dikriment ham huddi shunday faqay -- lisi.</p>
+		<h5>Solishtirish(comparison) operatorlar</h5>
+		<p>>, <, <=, >=, ==, ===, !==</p>
+		<h5>Tayinlash(assignment) operatorlar</h5>
+		<p>=</p>
+		<h5>Mantiqiy(logical) operatorlar: &&(va), ||(yoki), !(emas).</h5>
+		And<img src="./img/JSN_9.png"> |   
+		Or<img src="./img/JSN_10.png">
+		<p>Falsy qiymatlar: underfined, null, 0, NaN, ''(bo'sh string), False.</p>
+        <p>console.log(false || 1 || 87) bunda consolga 1 chiqadi chunki jS true qiymatlarni chapdan o'qib keladi va birinchi true qiymatni chiqaradi.</p>
+		<h5>Uchlik(ternary) operatorlar</h5>
+		<p>? :</p>
+	</div>
+	<div class="container bg-primary my-5">
+		<h2>12-dars. Amaliy Mashg'ulot</h2>
+		<p></p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>13-dars. If else </h2>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>14-dars. Switch Case</h2>
+		<p></p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>15-dars. Loop</h2>
+		<p>5 ta loop bor ular for, while, do...while, for...in, for...of</p>
+		<h5>for</h5>
+		<h5>while</h5>
+		<h5>do...while</h5>
+		<h5>for...in</h5>
+		<h5>for...of</h5>
+		<p>For...in va For...of array va abject uchun ishlatilinadi.</p>
+		<h5>Reverse loop bu teskari loop yani 5 dan 1 gacha son chiqarish.</h5>
+		<p>test keys - bu tuzgan funksiyamsizni tekshirish.</p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>16-dars. While va do...While</h2>
+		<p></p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2> 17-dars. Break && continue</h2>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>18-dars. For</h2>
+		<p></p>
+	</div>
+	<div class="container bg-primary my-5">
+		<h2>19-24-dars. Amaliy mashg'ulot</h2>
+		<p></p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>25.1-dars. Yangi object(Foctory funksiyasi)</h2>
+		<p>OOP usulida object yozish.</p>
+		<p>Method va Property object tarkibidagi function bu metod va obyekt ni o'zgaruvchilarini property yoki hosasi deyiladi.</p>
+		<p>Foctory funksiyasi(agar hossani key va value lari bir xil bo'lsa ularni bitta qilib yozish mumkin radius: radius, radius, va object ichida funksiya ni ham qisqartirish mumkin drow: function(), drow(),)</p>
+
+	</div>
+	<div class="container bg-success my-5">
+		<h2>25.2-dars. Yangi object(konstruktor funsiyasi)</h2>
+		<p>Konstruktor funsiyasida this yangi object ga qaratilgan bo'ladi(yani new ga), new bu yangi object hosil qiladi vabu  funksiyada return ishlatilmidi(konstruktor funsiyasi ishlatilganda CamelCase ishlatilinadi Foctory funksiyaga esa PascalCase ishlatilinadi)</p>
+		<p>JavaScript da object lar dinamik bo'ladi object lar tuzilganidan keyin ham  yangi metod va property lar qoshosh va o'chirish mumkin(objectNomi.yangiNossaNomi = 'Anna'; objectNomi.yangiFunNomi = function(){};) va objectning  mavjud hossa va metod larini o'chirish uchun delete aperatoi ishlatilinadi(delete objectNomi.yangiFunNomi).</p>
+		<p>Agar object ni const da elon qilgan bo'lsak ham unga yangi prorety va metod qo'shishimiz mumkin bu yerda const ni vazifasi objectni qiymatini o'zgartirib bo'lmasligi(const low = new Circle(1) low = {} bunday qilib bo'lmaydi).</p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>26-dars. Constructor hossasi</h2>
+		<p>Bu hamma funksiyada bo'ladi</p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>27-dars. Funksiya ham object</h2>
+		<p></p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>28-dars. Value va Reference type </h2>
+		<p>Primitive data type String Number Boolean Undefined Null</p>
+        <p>Reference data type Objec Array Function</p>		
+	</div>
+	<div class="container bg-success my-5">
+		<h2>29-dars. Object xossalari bo'ylab yurish</h2>
+		<p>for of faqat array va map uchun ishlaydi object da ham ishlashi uchun (let key of Object.keys(objectNomi) va (let key of Object.entries(objectNomi) va bunda key o'zi chaqriladi birdaniga qiyamati ham billa keladi(Array  ko'rinishida).</p>
+		<p>if('radius' in object nomi ? 'bor' : 'yo'q') object ichida qanday hossa borligini tekshirish.</p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>30-dars. Object dan clone olish</h2>
+		<p>Clone olishni 3 xil usuli bor(bunda object ichidgi qiymatni o'zgartirsa qolgan clone larga tasir qilmaydi, let obj = {key: 'p'}, obj_clone = {}; obj = obj_clone agar shunchaki qiymati bor objectni clone qilsak bittasini qiymatini o'zgartirsak  boshqasiga ham tasir qiladi).</p>
+		<p>1. for in orqali(agar object ichida object bo'lsa va uni ham qiymati o'zgarganda qolganlarga tasir qilmaydigan qilish uchun for in orqa emas Object.Assign orqali qilinadi)</p>
+		<p>2. Object.assign(objectClone, object) birinchi qiymatga clone objectimiz ikkinchi qiymatga esa haqiqiy objectimiz. let objectCloe = Object.assign({key: 'lol'}, object) bunda birinchi objectga ikkichi object qo'shiladi va objectClone degan o'zgaruvchiga beriladi let objectCloe = Object.assign({key: 'lol'}, {ses: 'sa'}) bunday ham qilish mumkin. let objectCloe = Object.assign(object_1, object) bunda birinchi objectga ikkichi object qo'shiladi va objectClone degan o'zgaruvchiga beriladi shunda object_1 da ham o'zini ham object qiymati bo'ladi objectClone da ham o'zini ham object_1 ni ham objectni qiymati bo'ladi.</p>
+		<p>3. spread operator yani 3 ta nuqta bilan.</p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>31-dars. Xotira boshqaruvi</h2>
+		<p></p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>32-dars. Math va String obyekt lari </h2>
+		<p>includes qidirish uchun ishlatilinadi va true va folse qaytaradi.</p>
+		<p>starsWith bunda so'z berilgan iboradan boshlanga yoki yoqligini bilish mumkin.bu metod keyssentatik deyiladi yani harfning kata kichikligi tasir qilishi(endsWith)</p>
+		<p>indexOf qaysi index dan boshlangan ligini bilish.</p>
+		<p>replace textni boshqa bir text bilan almashtirib beradi.</p>
+		<p>toUpperCase va toLowerCase</p>
+		<p>Trim text boshi va ohiridagi probellarni olib tashlaydi.(trimleft va trimright)</p>
+		<p>\n yangi qator va \' va `` uzun text bilan ishlash va ' larni yozaolish va `${}`.</p>
+		<p>Split bolib chiqadi masaln ' ' probellarni bo'lib chiqadi natijasi array boladi.</p>
+	</div>
+	<div class="container bg-primary my-5">
+		<h2>33-dars. Amaliy mashg'ulot</h2>
+		<p></p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>34-dars. To'plam bilan ishlash</h2>
+		<p>array.push() arrayni ohiriga xossa qo'shish(va qaytaradigan qiymati elementlar soni).</p>
+		<p>array.unshift() arrayni boshiga xossa qo'shish(va qaytaradigan qiymati elementlar soni).</p>
+		<p>array.splice() ni ikki xil yo'lda ishlatish mumkin 1) oraga xossa qo'shish uchun splice(2, 0, 9) birinchi qiymat bu qaysi index ga joylahtirishimiz ikkinchi qiymat uchinchi qiymatga nechchi sonini qo'shish 2) o'chirish uchun</p>
+		<p>array.indexOf() xossani qidiradi va bor bo'lsa shu xossani index ni qaytaradi agar bo'lmasa -1 qaytaradi, ikkinchi oladigan qiymati bu nechinchi index boshlab qidirish(lastIndexOf bu ohiridan boshlab qidiradi), (array.indxOf() === -1) shunda u faqat true yoki folse qaytaradi), (includes true yoki folse qaytaradi bir xil indexOf bilan).</p>
+		<p>findIndex</p>
+		<p>pop ohiridan ochirish kerak, unshift boshidan o'chirish va splice() birinchi qiymat qayerdan boshlab o'chirish ikkinchi qiymat nechta o'chirish.</p>
+		<p>butunlay o'chirishni 3 ta yo'li bor ular bosh number = [] qiymat berish(lekin unga ulangan arrayda qiymat qolib ketadi), number.length = 0 va number.splice(0,number.length).</p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>35-dars. To'plam bilan ishlash</h2>
+		<p>concat array larni birlashtirish uchun ishlatilidi(birinchiArray.concat(ikkinchiArray)).</p>
+		<p>slice  array larni ajratish(kesish).</p>
+		<p>... birlash tirish uchun ishlatilinadi va oraga boshqa qiymat qoshsa ham bo'ladi[...array_bir, 'string', ...array_ikki, true]</p>
+		<p>for of toplam bo'ylab yurish uchun va forEach ham to'plam boylab yuradi(arrayNomi.forEach(item, index) => console.log(index, item) index bu tartib raqamni chiqarib beradi item esa array ni qiymatini.</p>
+	</div> 
+	<div class="container bg-success my-5">
+		<h2>36-dars. To'plamni tartiblash</h2>
+		<p>sort toplamni tartiblash uchun (reverse) teskari tartiblash uchun(Agar qiymat bir xonalidan ko'p bo'lsa ishlamaydi chunki faqat birinchi xonadagi songa qarab saralaydi undan katta xonalarni ham saralash uchun function tuzish kerak function forSort(a,b){return a-b} endi hamma sonlar uchun ishlaydi array.sort(forSort))(Agar array ni ichiga object yozib object ni key hossasi bo'yicha ok.sort(function(first, second){ if(first.key > second.key) return 1 if(first.key < second.key) return -1 else return 0 })(arrayni ichida object bo'lmasa key hossa bo'lmaydi).</p>
+	</div>
+    <div class="container bg-success my-5">
+		<h2>37-dars. Every, Some va Filter</h2>
+		<p>every shart hammasini tog'ri kelgandagini true qaytaradi(arrayNomi.every(function(number){return number>=0})).</p>
+		<p>some esa bitta to'g'ri javob olsa bo'ldi.</p>
+		<p>filter shart to'g'ri kelgan qiymatlarni bitta to'plamga joylashtiradi(arrayNomi.filter(number => number >= 0)).</p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>38-dars. Map va Method chaining</h2>
+		<p>Map array ni har bitta elementini map qilib beradi(masalan toplamni har bitta elementini html tag joylashtiradi
+        (let sum = array_10.map(number => 'li' + number + '/li')(let sum2 = array_10.map(number => { return {value: number}}) ).</p>
+		<p>join bu array ichidagi element larni bitta qilib yozib beradi vergulsiz.</p>
+		<p>Method Chaining bu metod larni ketma ket qo'llash va ular calback hossali bo'lish kerak yani metod javob qaytarish kerak.</p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>39-dars. Reduce()</h2>
+		<p>Reduce bu array dagi hamma qiymatni qo'shib qaytarib beradi(arrayNomi.reduce((accumulator, currentValue) =>
+      accumulator + currentValue, 0)(currentValue bu array niqiymatlari, accumulator bu har safar qo'shiliyotgan qiymat ikkinchi qiymat bu accumulator ni qiymati yani har safar 0 dan boshlanadi).</p>
+	</div>	
+	<div class="container bg-success my-5">
+		<h2>44-dars. Function yozish usullari</h2>
+		<p>Function Declaration (uni tugashiga nuqtali vergul qo'yilmidi qo'yilsa ham hato bo'lmidi)</p>
+		<p>Function Expression  uni ham ikki hil qollash mumkin Anonymous Function Expression va Named Function Expression	(let write = function() anonymous, let write = function write())(uni ohiriga nuqtali vergul qo'yish kerak)</p>
+		<p>Javascript hoisting bu intirvyu da beriladigan savol nimaga Function Declaration da elon qilinga funksiyani tepada ham chaqirish mumkin lekin Function Expression ni unday qilib bo'lmaydi bu Javascript hoisting deyiladi bu narsa Function Declaration ni  faylni yuqorisiga olib o'tadi</p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>45-dars. Function argument</h2>
+		<p>Har qanday funksiyani arguments hossasi bo'ladi va u object qilib nechta argument berilgan bo'lsa tartib raqam bilan qaytarib beradi.</p>
+		<p>Rest parameters bu ... 3 ta nuqta orqali function ni argumentiga cheksiz qiymat berish imkonini beradi lekin uni argumentlarni o'hirida qollash kerak yani rest parameter dan keyin boshqa argument qollab bolmaydi va to'plam qilib qaytarib beradi.</p>
+		<p>Parametr(argument) larga defolt qiymat berib qo'yish ham mumkin ( function(name = 'Farrux'))</p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>46-dars. Getter va Setter</h2>
+		<p>Object lar ni mahsus hossasi let person = {
+	firstName: 'Jasur',
+	lastName: 'Abdusalomov',
+    get key(){
+    	return (this.firstName + ' ' + this.lastName)
+    },
+    set key(value){
+    	let keyArray = value.split(' ');
+    	this.lastName = keyArray[0];
+    	this.firstName = keyArray[1];
+    }
+}
+person.key = 'G`ulomjon Abidjanov'
+console.log(person);</p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>47-dars. Xatolar</h2>
+		<p></p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>48-dars. Global va mahaliy o'zgaruvchilar</h2>
+		<p></p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>49-dars. Let va Var orasidagi farq</h2>
+		<p></p>
+	</div>	
+	<div class="container bg-success my-5">
+		<h2>50-dars. This</h2>
+		<p></p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>51-dars. Promise</h2>
+		<p></p>
+	</div>
+	<div class="container bg-primary my-5">
+		<h2>52-dars. Amaliy Mashg'ulot</h2>
+		<p></p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>53-dars. DOM</h2>
+		<p></p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>54-dars. </h2>
+		<p></p>
+	</div>
+	<div class="container bg-success my-5">
+		<h2>55-dars. </h2>
+		<p></p>
+	</div>	
+</body>
+</html>

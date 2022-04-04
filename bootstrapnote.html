@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap note</title>
+	<style type="text/css">
+		body{
+	background-color: #ffc107 !important;
+	margin: 0;
+}
+
+p{
+	font-size: 20px;
+}
+.container{
+	margin-top: 20px;
+	padding: 10px 0;
+}
+        .row > div {
+            margin: 10px 0;
+            padding: 20px;
+            background-color: red;
+            border-radius: 5px;
+            border: 1px solid white;
+            color: white;
+            text-align: center;
+        }
+        img{
+            width: 20px;
+
+        }
+        button:hover img{
+           width: auto;
+           height: 500px;
+        }
+        .aa{
+            text-decoration: none;
+        }
+	</style>
+</head>
+<body>
+	<link rel="stylesheet"  href="./bootstrap/css/bootstrap.min.css">
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+	<div class="navbar">
+		<button type="button" class="btn btn-primary position-relative m-2">
+           <a  class="aa text-white" href="note.html">Home</a>
+        </button>
+        <button type="button" class="btn btn-danger position-relative ">
+           <a  class="aa text-white" href="html.html">HTML</a>
+        </button>
+        <button type="button" class="btn btn-success position-relative m-2">
+           <a  class="aa text-white" href="css.html">CSS</a>
+        </button>
+	</div>
+	<div class="container">
+		<h2>Bootstrap tarixi</h2>
+		<p>Bootstrap Mark Otto tomonidan qilingan va uni dastlab twitter da qolagan va 2011 yil ommaga ko'rsatgan.</p>
+	</div>
+	<div class="container bg-dark text-white">
+		<h2>Breakpoints va Containers</h2>
+		<p>Breakpoints xs s m l xl xxl.</p>
+		<p>Containers ni 3 xil usuli bor. </p>
+		<button><a href="./pdf/boo4.pdf" target="_bland">to'liq</a></button>
+	</div>
+	<div class="container bg-dark text-white">
+		<h2>Grid</h2>
+		<p>Grid 12 ustundan iborat.</p>
+		<button><a href="./pdf/boo5.pdf" target="_bland">to'liq</a></button>
+	    <button><a href="./pdf/boo6.pdf" target="_bland">to'liq</a></button>
+	</div>
+	<div class="container bg-dark text-white">
+		<h2>Columns</h2>
+		<p>Column-bootstrap grid tizimining asoslaridan biri bo'lib, u qatorni (row) bir necha bo'laklarga bo'lib.</p>
+		<p>Alignment-flexbox klasslari yordamida ustunlarni vertikal va gorizontal joylashuvini o'zgartirish mumkin.</p>
+		<p>Column wrapping-agar bir qatorga 12dan ko'p ustun joylashgan bo'lsa, ortiqcha ustunlar guruhi keyingi qatordan joylashadi.</p>
+		<p>Reordering (qayta tartiblash)-flexbox klasslari yordamida ustunlarni tartibini o'zgartirish mumkin.</p>
+		<p>Offsetting columns-ustunlarni o'ng tarafga surish hisoblanadi.</p>
+		<button><a href="./pdf/boo7.pdf" target="_bland">to'liq</a></button>
+	</div>
+	<div class="container bg-dark text-white">
+		<h2>Gutters</h2>
+		<p>Gutters - ustunlar orasidagi masofani belgilab beradi.</p>
+		<p>Responsive gutters yaratish uchun .gx-{breakpoint}-*, .gy-
+        {breakpoint}-* va .g-{breakpoint}-* klassidan foydalaniladi.</p>
+		<p>Gutterni olib tashlash uchun unga 0 beriladi.</p>
+		<button><a href="./pdf/boo8.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-danger">
+    	<h2>Typography</h2>
+    	<button><a href="./pdf/boo9.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-danger">
+    	<h2>Images</h2>
+    	<p>Images - bootstrapning rasmlarni moslashuvchan qilish uchun va ularga style berish uchun maxsus klasslari mavjud.</p>
+    	<p>Figures - bootstrapda figure yordamida rasm va mattni birga ekranga chiqarish
+        imkoniyati mavjud.</p>
+    	<button><a href="./pdf/boo10.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-danger">
+    	<h2>Tables</h2>
+    	<p>Tables(jadvallar)</p>
+    	<p>Scope="col" and scope="row"</p>
+    	<button><img src="./img/boo_1.png"></button>
+    	<p>Rang rangni table ga rows ga td va th larga bersa boladi(table-color).</p>
+    	<button><img src="./img/boo_2.png"></button>
+    	<p>.table-active</p>
+    	<button><img src="./img/boo_3.png"></button>
+    	<p>border, table active, Striped rows(zebra chiziq) larga rang qoshib ketsa boladi.</p>
+    	<p>align-middle jadval qay tarizda turishini belgilaydi vertikal yonalishda.</p>
+    	<button><img src="./img/boo_4.png"></button>
+    	<p>Anatomy 1.tabledark or light ,table foot and caption <a href="https://getbootstrap.com/docs/5.1/content/tables/#anatomy">to'liq</a>.</p>
+    	<button><a href="./pdf/boo11.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-primary">
+    	<h2>Form</h2>
+    	<p>Form text - form input uchun tegishli bo'lgan mattni uning tagidan .form-text klassidan foydalanib yaratish mumkin.</p>
+    	<p>Disabled inputs - form uchun disabled ko'rinishini berish uchun disabled attributidan foydalanish mumkin.</p>
+    	<p>Form control - input va textarea uchun style berishda .form-control klassidan foydalaniladi.(olchov,fayl yuklash,rang)</p>
+    	<button><a href="./pdf/boo12.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-primary">
+    	<p>Select</p>
+    	<p>Checks & Radios</p>
+    	<p>Range</p>
+    	<button><a href="./pdf/boo13.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-primary">
+    	<p>Input group</p>
+    	<button><a href="./pdf/boo14.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-primary">
+    	<p>Floating labels</p>
+    	<p>Form layout</p>
+    	<button><a href="./pdf/boo15.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-primary">
+    	<p>Validation</p>
+    	<button><a href="./pdf/boo16.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-secondary text-white">
+    	<h2>Component</h2>
+    	<p>Accordion - vertikal holatda ochilib / yopiladigan container element.1)<a href="">Example(odatiy)</a>2)<a href="https://getbootstrap.com/docs/5.1/components/accordion/#flush">Flush(borderlarni olish)</a>3)<a href="https://getbootstrap.com/docs/5.1/components/accordion/#always-open">Always open(hammasini ochish)</a></p>
+    	<p>Alerts - foydalanuvchining saytda bajargan harakatlari uchun mo'ljallangan xabar.Uning 8 xil ko'rinishi mavjud.</p>
+    	<p>Badge - mavjud kontentga qo'shimcha ma'lumot qo'shish uchun mo'ljallangan maxsus komponent.1)<a href="https://getbootstrap.com/docs/5.1/components/badge/#headings">Headings(h1 larga qo'shish)</a>2)<a href="https://getbootstrap.com/docs/5.1/components/badge/#buttons">Buttons(buttonga qoshish)</a><a href="https://getbootstrap.com/docs/5.1/components/badge/#positioned">Positioned(xabarga oxshagani va nuqtalisi)</a>3)<a href="https://getbootstrap.com/docs/5.1/components/badge/#background-colors">Background-colors(orqa fondi ranglisi)</a>4)<a href="https://getbootstrap.com/docs/5.1/components/badge/#pill-badges">Pill badges(ranglini dumaloqrog'i)</a></p>
+    	<p>Breadcrumb - joriy sahifani sahifalar ierarxiyasidagi joylashuvini bildirib turuvchi element.1)<a href="https://getbootstrap.com/docs/5.1/components/breadcrumb/#dividers">Dividers(/ ni o'zgartirish.)</a></p>
+    	<button><a href="./pdf/boo17.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-secondary text-white"> 
+    	<p>Button- formalar, modal va umuman olganda ma'lum bir harakat bajarish uchun maxsus elementlar hisoblanadi. Uning bir necha xil turi, o'lchami va holatlari mavjud.</p>
+    	<p>buttun ni a, buttun va input taglari orqali yasash mumkin.</p>
+    	<p>Button group</p>
+    	<button><a href="./pdf/boo18.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-secondary text-white">
+    	<p>Card</p>
+    	<p>card ga ikki xil navigation ulasa boladi(disabled bu class ga beriladi va ishlamaydigan qilib qoyadi).<a href="https://getbootstrap.com/docs/5.0/components/card/#navigation">to'liq</a></p>
+    	<p>card ga border da rang berishda bir xillarini rangini olib qoyish <a href="https://getbootstrap.com/docs/5.0/components/card/#mixins-utilities">toliq</a></p>
+    	<p>class="card h-100" bu cardni boyini 100% qiladi.</p>
+    	<button><a href="./pdf/boo19.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-secondary text-white">
+    	<p>Carousel and close button</p>
+    	<button><a href="./pdf/boo20.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-secondary text-white">
+    	<p>Collapse, Dropdowns, List group</p>
+    	<button><a href="./pdf/boo21.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-secondary text-white">
+    	<p>Modal</p>
+    	<p>Tooltips and popovers <a href="https://getbootstrap.com/docs/5.0/components/modal/#tooltips-and-popovers">to'liq</a></p>
+    	<button><a href="./pdf/boo22.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-secondary text-white">
+    	<p>Navs, tabs, navbar</p>
+    	<button><a href="./pdf/boo23.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-secondary text-white">
+    	<p>Offcanvas, pagination</p>
+    	<button><a href="./pdf/boo24.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-secondary text-white">
+    	<p>Popover and progress</p>
+    	<button><a href="./pdf/boo25.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-secondary text-white">
+    	<p>Scrollspy and spinners</p>
+    	<button><a href="./pdf/boo26.pdf" target="_bland">to'liq</a></button>
+    </div>     
+    <div class="container bg-secondary text-white">
+    	<p>Toasts and Tooltips</p>
+    	<button><a href="./pdf/boo27.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-info ">
+    	<h2>Helpers</h2>
+    	<p>Clearfix</p>
+    	<p>Coloured links</p>
+    	<p>Ratio</p>
+    	<p>Position</p>
+    	<button><a href="./pdf/boo28.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-info ">
+    	<p>Visually hidden</p>
+    	<p>Stretched links</p>
+    	<p>Texttruncation</p>
+    	<button><a href="./pdf/boo29.pdf" target="_bland">to'liq</a></button>
+    </div>
+    <div class="container bg-secondary">
+    	<h2>Utilities</h2>
+    	<p>Bacground-color</p>
+    	<p>Border</p>
+    	<p>Color</p>
+    </div>
+    <div class="container bg-secondary">
+    	<p>display</p>
+    	<p>flex</p>
+    </div>
+    <div class="container bg-secondary">
+    	<p>Float</p>
+    	<p>Interactions</p>
+    	<p>Overflow</p>
+    </div>
+    <div class="container bg-secondary">
+    	<p>Position</p>
+    	<p>Shadow</p>
+    	<p>Sizing</p>
+    </div>
+    <div class="container bg-secondary">
+    	<p>Spacing</p>
+    	<p>Text</p>
+    </div>
+    <div class="container bg-secondary">
+    	<p>Verticsl align</p>
+    	<p>Vizibilty</p>
+    </div>
+    <div class="container">
+    			<table class="table">
+			<thead>
+				<tr>
+					<th>class name</th>
+					<th>tip-1</th>
+					<th>tip-2</th>
+					<th>tip-3</th>
+					<th>tip-4</th>
+					<!-- <th>tip-5	</th> -->
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>margin</th>
+					<td>m-*</td>
+					<td>mt-*(*-top)</td>
+					<td>mb-*(*-bottom)</td>
+					<td>my-*( *-top and *-bottom)</td>
+				</tr>
+				<tr>
+					<th>padding</th>
+					<td>p-*</td>
+					<td>pt-*(*-top)</td>
+					<td>pb-*(*-bottom)</td>
+					<td>py-*(*-top and *-bottom)</td>
+				</tr>
+				<tr>
+					<th>bacground color</th>
+					<td>bg-(color)</td>
+					<td>bg-primary(blue)</td>
+				</tr>
+				<tr>
+					<th>Color</th>
+					<td>text-(color)</td>
+				</tr>
+			</tbody>
+		</table>
+    </div>
+</body>
+</html>

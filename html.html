@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+	<title>Html</title>
+	<style>
+		body{
+			background-color: #dcf8c6;
+		}
+        h1{
+            color: grey;
+            text-align: center;
+        }
+        span{
+            color: red;
+            font-size: 22px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .bb{
+        border-radius: 5px;
+        border:none;
+        background-color: #4d148c;
+        font-family: sans-serif;
+        font-size: 20px;
+        }
+        .aa{
+        color: white;
+        text-decoration: none;
+        }
+	</style>
+</head>
+<body>
+    <button class="bb"><a  class="aa" href="note.html">Home</a></button>
+  <h1>Html Note</h1>
+    <p><b>1.</b><span>h1</span> sarlovha.</p>
+    <p><b>2.</b><span>br</span>  qator tashlash(toq).</p>
+    <p><b>3.</b><span>title</span> sayt nomi.</p>
+    <p><b>4.</b><span>span</span> da qator tashlamaydi.</p>
+    <p><b>5.</b><span>p</span> qator tashlab yozadi.</p>
+    <p><b>6.</b><span>a</span> silka a ni ichida <span>href=</span> silka yoziladi va <span>target="_blank"</span> yangi sahifa ochadi rasimga ham link bersa bo'ladi va a ni yana bir nomi giper murojat.(linklar ikki xil bo'ladi internal-ichki(relative path) va external-tashqi(absolute) internal kampyuter ichida fayllarni ochadi external esa internetdan ochadi va ularga https://)</p>
+    <p><b>7.</b><span>img</span> rasim uchun ichida <span>src=</span> source rasim papkasi <span>alt=</span> atribyuti esa rasimga nom beradi.(toq).</p>
+    <p><b>8.</b><span>button</span> tugma qoyish va type ga button, reset va submit yoziladi.</p>
+    <p><b>9.</b> <span>ctrl</span> bilan <span>/ </span> kamentariyaga olish < !--  html uchun --> .</p>
+    <p><b>10.</b><span>b=strong</span> <b> qalinlashtiradi css da font-weight: bold;</b></p>
+    <p><b>13.</b><span>u=ins</span> <u> tagiga chizadi css da text-decoration:underline;</u>.</p>
+    <p><b>11.</b><span>hr </span>liniya chizadi.</p>
+    <p><b>12.</b><span>i=em</span> <i> yotqizib css da font-style: italic;</i>. </p>
+    <p><b>14.</b><span>sup</span> <sup>tepaga ko'taradi</sup>. </p>
+    <p><b>15.</b><span>sub</span> <sub>pasga tushuradi</sub>.</p>
+    <p><b>16.</b><span>del=s</span> <del>ustiga chizish css text-decoration: line-through;</del> .</p>
+    <p><b>17.</b><span>small</span> <small>kichikroq qiladi</small>.</p>
+    <p><b>18.</b><span>mark</span> <mark>sariq chizadi</mark>.</p>
+    <p><b>19.</b><span>ctrl+f</span> css da qidiruv.</p>
+    <p><b>20.</b><span>ul</span> <ul><li>sanoqsiz yani unordered list va ichiga li bilan yoziladi.</li></ul> </p>
+    <p><b>21.</b><span>ol</span> <ol><li>sanoqli yani ordered list va ichiga li bilan yoziladi.</li></ol> </p>
+    <hr>
+    <h1>Form</h1>
+    <p><b>22.</b><span>Form</span> bu backend ga malumot jo'natish uchun kerak va uni ichiga input yoziladi(input, checkbox va boshqa form hossalarda title="nimadir" atributini bersak va inputni oldiga sichqonchani olib kelsa title da gi yozuv chiqadi).</p>
+    <p><b>23.</b><span>label</span> p ga o'xshagan tag va for atributi input bilan bog'lash uchun bog'lash uchun input ga id beramiz va id dagi nomni labeldagi for ga yozamiz shunda ular bog'lanadi.</p>
+    <p><b>24.</b><span>Input</span> ni type atributi bor va unga text turi yoziladi misol  uchun text, email,data,file,password, checkbox, radio, button.</p>
+    <p><b>25.</b><span>checkbox</span> va <span>radio</span> atributlariga name ga bir xil yoziladi shunda bittasini tanlaydi va value atributi backend uchun va checked bu tanlangan degani.</p>
+    <p><b>26.</b><span>reset</span> bu inputni atributi bo'lib restart vazifasini bajaradi.</p>
+    <p><b>27.</b><span>textarea</span> kamentariya yozish uchun kerak, <span>rows</span> va <span>cols</span> atributlari joyni kattalashtiradi.</p>
+    <p><b>28.</b><span>placeholder </span>bu input ni atributi va padskaska vazifasini bajaradi.</p>
+    <p><b>29.</b><span>Select</span> bu narsalarni tanlash uchun ishlatilinadi masalan davlatlarni va davlatlar nomi option atributiga yoziladi, value atributi backend uchun selected degan atributi bor va u qaysi biri birinchida turishini belgilaydi va multiple bu bittasini emas bir nechtasini tanlashga yordam beradi.</p>
+    <hr><h1>Table</h1>
+    <p><b>30.</b><span>Table</span> bu jadval yasash uchun ochiladi va uni ichiga thead keyin tbody ochiladi.  </p>
+    <p><b>31.</b><span>Table</span> ni ichiga yani shu joyga <span>width</span> yoki <span>border</span> yoziladi.</p>
+    <p><b>32.</b><span>Thead</span> ichiga tr va uni ichiga th bu jadvalni boshi.</p>
+    <p><b>33.</b><span>Tbody</span> ichiga tr va uni ichiga td bu jadvalni pas tfoot ham bor(colspan atributi td ni ichiga yoziladi va unga raqam bersa oldida kelgan joyni boshatadi 2 bersa bitta oldidagini 3 bersa ikki ta oldindagi joyni boshatadi).</p>
+    <p><b>34.</b><span>Width</span> ga foyizda bersa oynani kichiklashtirsa yoki kattalash tirsa ham foyizli o'zgaradi.</p>
+    <p><b>35.</b><span>Rowspan</span> bu td ni ichiga yoziladi va bu uzunasiga rowspan=son beriladi nechanchi qatorligini anglatadi. </p>
+    <p><b>36.</b><span>Colspan</span> bu rowspani boyga berilishi.</p>
+    
+    
+    <button style="width:70px; height: 30px; font-size: 20px;"><a style="text-decoration: none; color: black;" href="htts://kun.uz">kun</button>
+    <br>
+    <a href="https://kun.uz"><button style="width:70px; height: 30px; font-size: 20px;">kun</button></a>
+</body>
+</html>
+
+
+ 
+
+
+
+    

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image/png" href="./img/css2.png">
+	<title>CSS</title>
+	<style type="text/css">
+		
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: red;
+    padding: 20px;
+
+    margin-bottom: 100px;
+}
+.navbar_items{
+    padding: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+body{
+	margin: 0;
+	background-color: #128c7e;
+}
+.containerr{
+    width: 1250px;
+    margin: 0 auto;    
+}
+.container{
+    padding-top: 60px;
+    width: 1250px;
+    margin: 0 auto;
+}
+h1{
+	text-align:center;
+	color: #B7D4FF;
+}
+h2{
+    margin-left: 10px;
+	color: darkred;
+	font-weight: bold;
+}
+p{
+	font-family: cursive;
+	font-size: 18px;
+}
+button{
+    border-radius: 5px;
+    border:none;
+    background-color: #ff6600;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.q{
+    color: white;
+    text-decoration: none; 
+}
+img{
+    opacity: 0.3;
+    width: 20px;
+}
+img:hover{
+    opacity: 1;
+    width: 60%;
+}
+.aa{
+    text-decoration: none;
+    color: white;
+}
+.color{
+    background-color: #5AA9E6;
+    padding: 20px ;
+}
+.shadow{
+/*    padding-top: 60px;*/
+}
+.man{
+    margin-bottom: 100px;
+}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+	   <div class="containerr">     
+		   <a class="navbar_items" href="#color">Color</a>
+		   <a class="navbar_items" href="#border">Border</a>
+		   <a class="navbar_items" href="#size">Size</a>
+		   <a class="navbar_items" href="#shadow">Shadow</a>
+		   <a class="navbar_items" href="#background">Background</a>
+		   <a class="navbar_items" href="#font">Font</a>
+		   <a class="navbar_items" href="#position">Position</a>
+		   <a class="navbar_items" href="#responsive">Responsive</a>
+		   <a class="navbar_items" href="#display">Display</a>
+		   <a class="navbar_items" href="#transform">Transform</a>
+		   <a class="navbar_items" href="#transition">Transition</a>
+		   <a class="navbar_items" href="#grid">Grid</a>
+		   <a class="navbar_items" href="#flexbox">Flexbox</a>
+		   <a class="navbar_items" href="#animation">Animation</a>
+	   </div>
+	</div>
+	<div class="shadow" id="note">
+	   <div class="container">
+		   <h1>CSS Note </h1>
+		   <p><b>CSS Cascading Style Sheets</b></p>
+   	       <p>CSS da tepadan pasga ishlaydi va ikki ta class dan eng pastagisi ishlaydi id qoyilsa id ishlaydi inline usuliqoyilsa inline ishliydi oxirgisi bu !important bu  class two class id inline !important (inline styles > ID > class and [attribute] > tag)</p>
+   	       <p>Kamentariyaga olish /*css da */ selektr bu css  ni bog'lash masalan id class etc</p>  
+           <p>p h1 bular tag style class id bular atribut.</p>
+           <p><b>1.</b>Inline tag ichiga yozish orqali yani tag ni ichiga style
+           berish orqali.</p>
+           <p><b>2.</b>Internal = Embedded usuli head ni ichida <.stayle> ochildi va ichiga yoziladi.</p>
+           <p><b>3.</b>External usul CSS fayl ochib ishlash usuli.</p>
+	       <p><b>*</b>hammasiga tegishli degani</p>
+           <img src="./img/ulw.png">
+           <img src="./img/ule.png">
+           <img src="./img/ulr.png">
+           <img src="./img/ult.png">
+	   </div>
+	   <div class="shadow" id="color">
+	   	<div class="container">
+	   		<h2>Colors</h2>
+            <ul>
+               <li><p>rgb, rgba, hsl, hex, hsla</p></li>
+               <li><p><b>rgba bu a foyiz degani 0 dam 1 gacha</b></p></li>
+	            <li><p><b>variables</b> ko'p qollanishni oldini oladi boshida yoziladi bodyga yoziladi va oldiga ikkita chiziqcha qoyoladi ishlatish uchun var().</p></li>
+               <li><p><b>background-color:transparent;</b> orqa fondagi rangni oladi.</p></li>
+               <li><p><b>gradient:</b>bir vaqtning o'zida ko'rsatilgan ikki va undan ortiq ranglar orasida o'tish imkoniyatini beradi</p></li>
+               <li><p><b>filter:</b>elementga vizual effekt berish uchun ishlatiladi</p></li>
+               <li><p><b>filter:opacity(100%);</b> rasmimizni ko'rinish darajasini belgilab beradi</p></li>
+               <button><a href="./pdf/28ul.pdf">to'liq</a></button>
+            </ul>
+	   	</div>
+	   </div>
+	   <div>
+	   	<div class="container" id="border">
+	   		<h2>Border</h2>
+	         <ul>
+	            <li><p><b>border</b> birnchi qalinligi ikkinchi turi uchinchi rangi</p></li>
+               <li><p><b>boreder-style </b>border dagi ramkaga stil beradi va turlari dotted,solid, double va dashed.</p></li>
+               <li><p><b>border-radius</b> foyizda yoki px beriladi(agar dumoloq bo'masa width bilan height bir hil o'lcham beriladi).</p></li>
+               <li><p><b>border-width</b> bu borderni qalinligi.</p></li>
+         	   <li><p><b>border-bottom </b>bu faqat pasiga chizadi yon tepaga ham bor.</p></li>
+               <li><p><b>border-collapse: collapse;</b> bu table da ishlatilinadi va table ga border bergandagi chiziqlarni birlashtirib beradi(separate (default):).</p></li>
+            </ul>
+	   	</div>
+	   </div>
+	   <div id="size" class="shadow">
+	   	<div class="container">
+	      	<ul>
+	      	<h2>Size</h2>
+            <li><p><b>Absolute(mutloq)</b> px, cm, mm, in va pt.</p></li>
+            <li><p><b>Relative(nisbiy)</b> % rem, em, vw va vh(viewport units). </p></li>
+            <button><a href="./pdf/33ul.pdf" target="_blank">to'liq</a></button>
+            <button><a href="./pdf/34ul.pdf" target="_blank">to'liq</a></button>
+            <button><a href="./pdf/35ul.pdf" target="_blank">to'liq</a></button>
+            <button><a href="./pdf/36ul.pdf" target="_blank">to'liq</a></button>
+            <button><a href="./pdf/37ul.pdf" target="_blank">to'liq</a></button>
+	   	   </ul>
+	   	</div>
+	   </div>
+	   <div id="shadow" class="shadow">
+	   	<div class="container">
+	   		<ul>
+	   		<h2 >Shadow</h2> 
+            <li><p><b>box-shadow </b>bu soya beradi va color ham beriladi.( input:focus {box-shadow: none; bu textarea yoki input dagi text yozish uchun bosgamda borderni rangi qorayishini yoqotadi)</p></li>
+	         <li><p><b>offset-x</b> x kordinata boyicha beradi va -px yoki +px bersa bo'ladi.</p></li>
+	         <li><p><b>offset-y</b> y kordinata boyicha beradi va -px yoki +px bersa bo'ladi.</p></li>
+	         <li><p><b>blur-radio</b> soyani hraligni belglidi (OPTIONAL yani ixtiyori tag). </p></li>
+	         <li><p><b>spread-radio</b> soyani kichik yoki kattaligini belglidi (OPTIONAL yani ixtiyori tag). </p></li>
+	         <li><p><b>misol</b> box-shadow</p></li>
+	   	   </ul> 
+	   	</div>
+	   </div>
+      <div id="background">
+      	<div class="container">
+      		<ul>
+      		<h2>Background</h2>
+          	<li><p><b>background-img:</b></p></li>
+            <li><p><b>background-size:cover </b> bu rasimni o'z holicha chiqaradi keyin width height bersa ham bo'ladi.</p></li>
+            <li><p><b>background-repeat:</b></p></li>
+            <li><p><b>background-position:</b></p></li>
+            <button><a href="./pdf/26ul.pdf" target="_blank">to'liq</a></button>
+            </ul>
+      	</div>
+      </div>
+      <div id="font">
+      	<div class="container">
+      		<ul>
+      		<h2>Font</h2>
+	         <li><p><b>font-family</b> text turi  monospace, sans-serif, serif va cursive fantasy shu turlar bor(agar shirif nomi bitta so'zdan tashkil topsa qo'shtirnoqsiz yoziladi).</p></li>
+            <li><p><b>letter-spacing: </b>harflar orasidagi bosh joy.</p></li>
+            <li><p><b>line-height:px;</b>matinni orasini opish pas tepa.</p></li>
+            <li><p><b>list-style-type: none;</b> li bilan ul ni son va nuqtasini ochiradi.</p></li>
+            </ul>
+      	</div>
+      </div>
+	   <div id="position">
+	   	<div class="container">
+	   			<ul>
+	   			<h2>Position</h2>
+	            <li><p><b>position:</b> bu narsalarni surish uchun ishlatilinadi 1)static(defolt) 2)absolute 3)fixed 4)relative 5)sticky </p></li>
+	            <img src="./img/posi.png">
+	            <li><p><b>position:relative;</b>nisbiy pozitsiya top:100px; bu rasimni yoki boshqa narsalarni boshqa narsalarga tasir qilmagan holda pasga olib tushadi va narsalarni ustiga ham chiqib ketadi(fayldan chiqib ketmidi uni joyiga hech narsa turib olmaydi).</p></li>
+	            <img src="./img/repo.png">
+	            <li><p><b>position:absolute;</b> bu containerni ichiga qoyiladi va ishlatilgandan keyin uni joyiga boshqa narsa turvoladi(yani fayldan chiqib ketadi).</p></li>
+	            <img src="./img/posa.png">
+	            <li><p><b>position:fixed;</b> bu ekranga yopishib qoladi va ishlatilgandan keyin uni joyiga boshqa narsa turvoladi(yani fayldan chiqib ketadi)(fixed ishlatilganda displya:inline-block rejimiga otadi va mar).</p></li>
+               <img src="./img/posf.png">
+               <li><p><b>position:sticky;</b> bu navbarga ko'pincha ishlatlinadi yani bir joyga yopishtirib qoyadi keyin topda top:0; da qiymat beriladi va tashqarisidagi div ni maydonida qotadi (fayldan chiqib ketmidi uni joyiga hech narsa turib olmaydi).</p></li>
+               <img src="./img/post.png">
+	            <li><p><b>float:</b> bu tagma tak kelgan divlarni bir qatorga joylaydi left  va right joylashtirdi(va float bergandan so'ng pastdagi divlarni ham o'z ichiga ovoradi buni tog'irlash uchun yana bitta div ochib class berib cssdagi class ni ichiga clear:both deb yozsa bas )va width:33.3% deb yoziladi uchta div bo'lsa</p></li>
+	            <img src="./img/pofl.png">
+              	<li><p><b>z-index</b> ustma-usttushib qolgan elemantlarni ketma ketligini aniqlab beradi.Kattaroq z-index ga ega bo'lgan element kichigiga qaroganda oldinda turadi.z-index:0; difolt qiymati(position:static dan tashqari hammasida ishlaydi)</p></li>
+	            <img src="./img/poz.png">
+	            <li><p class="aq"><b>overflow</b> bu kontent element ichiga sig'may qolgan payti,o'zini qanday tutishini aniqlab beradi.(qiymatlari visible(default)sig'may qolgan kontent ekranda boricha ko'rinadi,hidden sig'may qolgan qismi ekrandan yashirilinadi(berkitilinadi),scroll-sig'may qolgan qisimni ko'rish uchun scroll qo'shiladi,auto-xuddi scroll ga o'xshab sig'may qolgan qismini ko'rish uchun scroll qo'shiladi, lekin faqatgina kerak bo'lgan payti).</p></li>
+	            <button><a class="aq" target="_blank" href="./pdf/aq.pdf">To'liq</a></button>
+	            </ul>
+	   	</div>
+	   </div>
+	   <div id="responsive">
+	   	<div class="container">
+	   		<ul>
+	   		<h2>Responsive</h2>
+	         <li><p><b>s</b></p></li>
+	         <img src="./img/resm.png">
+          	<li><p><b>rasimdagi </b>ikkita tag rasimni ekranga sig'diradi telfonga ham planshetda ham bir xil turadi.</p></li>
+         	<img src="./img/resi.png">
+	         <li><p><b>s</b></p></li>
+	         <img src="./img/rest.png">
+	         </ul>
+	   	</div>
+	   </div>
+	   <div id="display">
+	   	<div class="container">
+	   		<ul>
+	   		<h2>Display</h2>
+            <li><p><b>display:block </b>bu inline tag larni block holatiga olib keladi.</p></li>
+	         <li><p><b>display:inline </b>bu block tag larni inline holatiga olib keladi.</p></li>
+            <li><p><b>display:inline-block </b>(inline tag lar white olmidi) bu elemnt inline tag larini white olishiga yordam beradi.</p></li>
+            <li><p><b>display:none </b>yoq qiladi va joy qoldirmaydi.</p></li>
+            <li><p><b>visibility:hidden;</b> bu yashiradi va joy qoldiradi.</p></li>
+            </ul>
+	   	</div>
+	   </div>
+	   <div id="transform">
+	   	<div class="container">
+	   		<ul>
+	   		<h2>Transform</h2>
+	         <li><p><b>transform </b>veb sahifamizdagi elementlarni aylantirish, siljitish, o'lchovini o'zgartirish, va og'dirish uchun ishlatilinadigan CSS xossasi. Uning 2 ko'rinishi mavjud 2D va 3D</p></li>
+	         <button><a href="./pdf/49ul.pdf" target="_blank">to'liq</a></button>
+	         <li><p><b>transform: rotate(son deg);</b>+son bolsa sog'at strelkasi bo'ylab - bo'lsa teskari.</p></li>
+	         <li><p><b>transform-origin: top left px;</b>Transform origin - o'zgartirish (transform) amal qiladigan nuqta.</p></li>
+	         <li><p><b>translate </b>elementimizni xozirgi joyidan siljitish (surish)  uchun ishlatiladi.Musbat qiymat o'ng va pastga qarab, manfiy esa chap va yuqoriga qarab.
+            siljitish uchun ishlatilad</p></li>
+            <li><p><b>scale </b>elementimizni o'lchovini oshirish yoki kamaytirish uchun ishlatiladi.0 bilan 1 orasida berilgan qiymat uning o'lchovini kamaytiradi, 1dan katta qiymat esa o'lchovini oshirad</p></li>
+            <li><p><b>skew </b>elementimizni ma'lum bir darajaga (degree)ga og'dirish uchun
+            ishlatiladi. Manfiy qiymat og'ish yo'nalishini teskari tomonga o'zgartiradi</p></li>
+            <li><p><b>3D Transform </b>veb sahifamizdagi elementlarni uch o'lchovlik fazoda aylantirish, siljitish, o'lchovini o'zgartirish hisoblanadi.</p></li>
+            <button><a href="./pdf/50ul.pdf" target="_blank">to'liq</a></button>
+            <li><p><b>text-transform: </b>uppercase lowercase,capitalize; bu harflarni kattalashtiradi kich, bosh kattalash.</p></li>
+            </ul>
+	   	</div>
+	   </div>
+	   <div id="transition">
+	   	<div class="container">
+	   		<ul>
+	   		<h2>Transitions</h2>
+            <li><p><b>Transition delay </b>effektimiz qachon boshlanishini (kechikishini)
+            belgilab beradi.</p></li>
+            <button><a href="./pdf/51ul.pdf" target="_blank">to'liq</a></button>
+	   	   </ul>
+	   	</div>
+	   </div>
+	   <div id="grid">
+	   	<div class="container">
+	   		<ul>
+	   		<h2>Grid</h2>
+		      <li><p><b>Display:grid;</b>  bu grid boshlanganini bildiradi bu siz hech qanday grid qiymatlar ishlamaydi</p></li>
+            <img src="./img/disgr.png">
+            <li><p><b>grid-template-columns:</b> ustun nechtaligini va qiymati yoziladi.</p></li>
+            <li><p><b>grid-template-row:</b> qator nechtaligini va qiymati yoziladi.</p></li>
+            <img src="./img/gridcr.png">
+            <li><p><b>grid-gap:</b> oralaridagi masofa.</p></li>
+            <img src="./img/gridgap.png">
+            <li><p><b>grid-row(column)</b> item ga beriladigan qiymat.</p></li>
+            <img src="./img/gridrc.png">
+            <li><p><b>justify(align)-items:</b> </p></li>
+            <img src="./img/gridit.png">
+            <img src="./img/misolj.png">
+            <li><p><b>grid-template-areas:</b> bu item larga nom beradi.</p></li>
+            <img src="./img/gridtare.png">
+            <li><p><b>grid-area:</b> nom berib bajarsa boladi yoki raqamlar bilan misol uchun grid area rasimida pasida berilgan.</p></li>
+            <img src="./img/gridare.png">
+            <li><p><b>repeat va minmax</b> rasmda chuntirilgan.</p></li>
+            <img src="./img/gridrm.png">	
+            <li><p><b>Auto-fill va Auto fit </b>auto fit bosh joylarni toldiradi.</p></li>
+            <img src="./img/gridaff.png">
+            <button><a class="aq" target="_blank" href="./pdf/61ul.pdf">To'liq</a></button>
+            </ul>
+	   	</div>
+	   </div>
+	   <div id="flexbox">
+	   	<div class="container">
+	   		<ul>
+	   		<h2>Flexbox</h2>
+				<li><p><b>display: flex;</b> bu flexbox boshlanganini bildiradi bu siz hech qanday flexbox qiymatlar ishlamaydi va o'zini Default(promalchaniya felx-direction:row;) qiymatlari bor yani narsalar o'ngdan bir qator bo'lib qoladi.</p></li>
+				<img src="./img/flexbox.png">
+				<li><p><b>flex-direction:</b></p></li>
+	 			<img src="./img/flexdirec.png">
+	 			<li><p><b>justify-content:</b>gorizantal joylashtiradi.</p></li>
+	 			<img src="./img/flexjusco.png">
+	 			<li><p><b>align-content:</b> vertikal joylashtiradi.</p></li>
+	 			<li><p><b>align-items:</b> strech o'zgarmas qiymatlarda ishlamaydi o'zgaradigan qiymatda iishlaydi(max-height).</p></li>
+			   <img src="./img/flexali.png">
+	 			<li><p><b>flex-wrap:wrap;</b> sig'magan narsalarni pasga tushurvoradi o'lchamini buzmagan holda.</p></li>
+	 			<img src="./img/flexwrap.png">
+	 			<li><p>Bular hammasi cotainer ga beriladigan qiymatlar edi endi esa item ga beriladigan qiymatlar.</p></li>
+	 			<li><p><b>flex-shrink:</b> bu qisqarish yoki jozilish tezligini olchidi.</p></li>
+	 			<img src="./img/flexshri.png">
+	 			<li><p><b>Flex-grow:</b> bu keragidan oshiq oshadi.</p></li>
+	 			<img src="./img/flexgr.png">
+	 			<li><p><b>flex-basis:</b></p></li>
+	 			<img src="./img/flexbas.png">
+	 			<li><p><b>flex</b> da uchta qiymatni birlashtiradi shrink,grow,basis</p></li>
+	 			<img src="./img/flexsho.png">
+	 			<li><p><b>order:</b> yani item larni joyini o'zgartiradi.</p></li>
+	 			<img src="./img/flexor.png">
+	 			<img src="./img/flexmi.png">
+	 			<li><p><b>align-self:</b> bu pasga temaga surish.</p></li>
+	 			<img src="./img/flexase.png">
+				<img src="./img/flexmis.png">
+			   </ul>
+	   	</div>
+	   </div>
+      <div id="animation">
+      	<div class="container">
+      		<ul>
+      		<h2>Animation</h2>
+	         <li><p><b>CSS animation </b>elementni bir "style"dan boshqa "style"ga asta-sekinlik bilano'tishini ta'minlaydi. Animation istalgan CSS xossani istalgan martta o'zgartirish imkonini beradi</p></li>
+	         <li><p><b>Animation delay</b> animatsiyamiz qachon boshlanishini (kechikishini) belgilab beradi</p></li>
+	         <li><p><b>Animation duration</b> animatsiyani qanday davomiylikga ega bo'lishini belgilab beradi.</p></li>
+	         <li><p><b>Animation iteration count</b> animatsiyamiz necha marta qaytarilishini belgilab beradi. Default qiymati 1ga teng(infinite to'htovsz qaytariladi.)</p></li>
+	         <button><a href="./pdf/52ul.pdf" target="_blank">to'liq</a></button>
+	         <button><a href="./pdf/53ul.pdf" target="_blank">to'liq</a></button>
+	         </ul>
+      	</div>
+      </div>
+      <div id="">
+      	<div class="container">
+      		<ul>
+      		<li><p><b>chaqirish usullari</b> tag orqali chaqirilinadi class orqali id orqali va type="radio"oqali</p></li>
+	         <li><p><b>id</b> bilan bog'lsh  va id # bilan chaqirilinadi</p></li>
+	         <li><p><b>text-decoration</b> overline underline line-through</p></li>
+	         <li><p><b>text-align</b> bu textni qay tarizda joylashishini belgilaydi center, rigt,left va justify bu text qatorni toldirish.  </p></li>
+	         <li><p><b>padding</b> 2ta dan birinchisi tepa pas ikkinchisi yon tomon.</p></li>
+	         <li><p><b>button</b> tugmachani joylash tirishni ikki xil yo'li bor 1)input dagi type ga button yozib 2) button o'zi.(farqi less66.html.css)</p></li>
+	         <li><p><b>button:hover cursor: pointer;</b> bu button ga mishkani olib borgabda qolchani rasmi chiqadi.</p></li>
+	         <li><p><b>cursor:</b> ni turlari default,help,pointer,move,wait,crosshair,progress,not-allowed,text,vertical-text,cell,copy.</p></li>
+	         <img src="./img/ja.jpg">
+            <li><p><b>:first-child last-child nth-child(odd or even)</b></p></li>
+            <li><p><b>box-sizing:border-box</b> bu div larni bir qator qilgandan so'ng ularga border bersa yoki padding(yani qo'shimcha joy bersa)div ni pasga tushirvoradi shunda box-sizing:border-box deb yozsa bas.(32, 33 chunmasa less60.css.html da ishlatilgan)</p></li>
+            <li><p><b>opacity:</b> bu rasim necha foyiz ekranda ko'rinishini belgilab beradi 1 gacha beriladi.</p></li>
+            <button><a href="./pdf/27ul.pdf" target="_blank">to'liq</a></button>
+            <li><p><b>object-fit:contain</b> img yoki video uchun  width:100% height:100% bu rasim yoki videoni toliq ekranga joylash tiradi.</p></li>
+            <li><p><b>input:focus{outline:0;</b> bu input yoki textarea dagi yozish uchun ortiqcha joy ajratib berishini yoq qilib beradi.</p></li>
+            <li><p><b>vertical-align: middle;</b></p></li>
+            <li><p><b>:hover </b>psevda kklaslar mish kani olib kelsa ozgaradi.</p></li>
+            </ul>
+      	</div>
+      </div>
+</body>
+</html>
